@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Ticket</title>
+    <link href="sucess.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="ticket-container">
+      <h1>Universal Events Ticket</h1>
+      <div class="ticket">
+        <div class="ticket-details column">
+          <p><strong>Name:</strong> <span id="ticket-name"></span></p>
+          <p><strong>Email:</strong> <span id="ticket-email"></span></p>
+          <p><strong>Price:</strong> <span id="ticket-price"></span></p>
+          <p>
+            <strong>No. of Tickets:</strong> <span id="ticket-quantity"></span>
+          </p>
+          <p><strong>Total Amount:</strong> <span id="ticket-total"></span></p>
+          <p>
+            <strong>Ticket Reference:</strong>
+            <span id="ticket-reference">23QbgUHnk9j</span>
+          </p>
+        </div>
+
+        <div class="barcode column">
+          <img src="./images/qr-code.png" width="160" alt="QR code" />
+        </div>
+      </div>
+      <div class="ticket-buttons">
+        <button onclick="printTicket()">Print Ticket</button>
+        <button onclick="sendEmail()">Send Ticket via Email</button>
+      </div>
+    </main>
+    <script src="sucess.js"></script>
+  </body>
+</html>
