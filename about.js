@@ -15,7 +15,7 @@ let backgroundImg = [
 
 // Initialize index variable
 let i = 0;
-
+hero.style.backgroundImage = 'url("' + backgroundImg[1] + '")';
 // Function to handle the "Next" button click
 next.addEventListener("click", function () {
   // Check if the current index is less than 4 (the maximum index of the array)
