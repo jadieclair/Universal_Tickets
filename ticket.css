@@ -1,0 +1,118 @@
+/* General styles */
+body {
+          font-family: 'Outfit', sans-serif;
+          color: #333;
+          line-height: 1.6;
+        }
+        
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 15px;
+        }
+        
+        /* Ticket form styles */
+        .ticket-section {
+          padding: 100px 0;
+          background-image: url('./img/form.jpeg');
+          background-size: cover;
+          background-position: center;
+
+        }
+        
+        .ticket-form {
+          background-color: #fff;
+          color:#333;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ticket-form h6 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+        
+        .ticket-form-body {
+          margin-top: 10px;
+        }
+        
+        .customer-name,
+        .email,
+        .price,
+        .quantity,
+        .total-price {
+          font-weight: bold;
+        }
+        
+        .ticket-form input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+      
+        .ticket-form input::placeholder {
+          color: #777;
+      
+        }
+        
+        .ticket-form input[type="total"] {
+          font-weight: bold;
+          text-align: right;
+        }
+        
+        .ticket-form button {
+          display: block;
+          width: 100%;
+          padding: 12px;
+          background-color: #df4adf;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        .ticket-form button:hover {
+          background-color: #c03cc0;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+          background-color: white;
+          padding: 10px 0;
+          color: #e292c9f0;
+        }
+        
+        .navbar-brand {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        
+        .nav-link {
+          color: #161414;
+          font-size: 16px;
+          padding: 5px 15px;
+        }
+        
+        .nav-link:hover {
+          color: #df4adf;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 767px) {
+          .ticket-form {
+            padding: 15px;
+          }
+        }
+        
+        @media (max-width: 575px) {
+          .ticket-form input,
+          .ticket-form button {
+            font-size: 14px;
+          }
+        }

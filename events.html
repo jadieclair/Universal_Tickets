@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Ticketing System</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1 class="Tstation">Universal Events</h1>
+  </header>
+  <div class="search">
+    <label for="search-input">Search</label>
+    <input type="text" id="search-input" placeholder="" />
+  </div>
+
+
+
+  <div class="category">
+    <label for="category-filter">Filter by Category:</label>
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="Skate">Skate</option>
+      <option value="Tech">Tech</option>
+      <option value="Music">Music</option>
+    </select>
+  </div>
+
+  <label for="date-filter" class="Filterdate">Filter by Date:</label>
+  <select id="date-filter">
+    <option value="all">All</option>
+    <option value="upcoming">Upcoming</option>
+  </select>
+
+
+  <div id="event-list"></div>
+  <script>
+        window.onload = function() {
+            // Retrieve the user object from session storage
+            const storedUser = sessionStorage.getItem('user');
+
+            if (storedUser) {
+                // Parse the user object from JSON format
+                const user = JSON.parse(storedUser);
+
+                // Display the greeting with the username
+                alert('Welcome, ' + user.name + '!');
+
+                // Clear the user object from session storage
+                sessionStorage.removeItem('user');
+            }
+        };
+  </script>
+  <script src="index.js">
+  </script>
+  <footer class="partners">
+    <h3 class="headline-text heading-dash">Partners <span></span></h3>
+    <div class="partner-wrapper">
+      <img src="./img/partner1.png" alt="">
+      <img src="./img/partner2.gif" alt="">
+      <img src="./img/partner3.jpg" alt="">
+    </div>
+  </footer>
+</body>
+</html>

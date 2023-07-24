@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Moirai+One&family=Orbitron&family=Ysabeau+SC:wght@300&display=swap");
+
+body {
+  margin: 5rem;
+  padding-left: 1px;
+
+}
+
+  .Tstation {
+    font-size: 5rem;
+    text-align: center;
+    color: #16125d;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 4px aqua,
+      0 0 4px aqua, 0 0 4px rgb(127, 157, 157), 0 0 4px aqua, 0 0 4px aqua;
+    font-family: "Ysabeau SC", sans-serif;
+    color: aqua;
+    animation: hueRotate 7s alternate infinite;
+  }
+  
+  @keyframes hueRotate {
+    0% {
+      filter: hue-rotate(279deg);
+    }
+    50% {
+      filter: hue-rotate(197deg);
+    }
+    100% {
+      filter: hue-rotate(12deg);
+    }
+  }
+
+h2 {
+  color: #343a40;
+  text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #0fa,
+    0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 10px rgb(161, 78, 135), 0 0 10px #0fa,
+    0 0 10px rgb(159, 116, 145), 0 0 10px rgb(188, 106, 149), 0 0 10px #0fa;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+h2 {
+  color: #343a40;
+  text-shadow: 0 0 7px rgb(167, 127, 149), 0 0 7px rgb(165, 206, 206), 0 0 7px rgb(194, 157, 184), 0 0 10px aqua,
+    0 0 10px , 0 0 10px rgb(182, 216, 216), 0 0 10px rgb(224, 205, 217), 0 0 10px rgb(182, 202, 202);
+}
+
+p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Kalam", cursive;
+}
+
+#event-list {
+  padding: 2rem;
+  margin: auto;
+  align-content: center;
+}
+
+.event-card {
+  border: solid 5px pink;
+  width: 10rem;
+  background-color: rgb(214, 225, 225);
+  opacity: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid rgb(97, 216, 243);
+  padding: 20px;
+  width: 30rem; 
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* margin-top: 15rem ; */
+}
+
+.event-card img {
+  width: 300px;
+  height: 250px;
+  width: 250px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+.event-card:hover{
+  background-color: #eaeaea;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.event-card h2 {
+  margin-top: 0;
+}
+
+.event-card p {
+  margin-top: 3px;
+  color: #596169;
+}
+
+/* search bar */
+.search {
+  color: rgb(97, 216, 243);
+  text-align: justify;
+}
+
+
+
+label {
+  font-size: 2rem;
+}
+
+#search-input {
+  width: 15rem;
+  padding: 0.2rem;
+  border: none;
+  text-align: justify;
+
+}
+
+.category {
+  color: #272a63;
+  text-align: justify
+}
+
+#category-filter {
+  width: 5rem;
+  padding: 0.2rem;
+  border-radius: 1rem;
+}
+
+#date-filter {
+  border-radius: 1rem;
+  padding: 0.2rem;
+  
+}
+
+.Filterdate {
+  color: rgb(119, 65, 170);
+  text-align: center;
+}
+
+img {
+  width: 12rem;
+}
+button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #75cff0 0%, #dfb1db 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #d542d7 0%, #40dbdd 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+button:hover::after {
+  filter: blur(30px);
+}
+
+button:hover::before {
+  transform: rotate(-180deg);
+}
+
+button:active::before {
+  scale: 0.7;
+}
+
+.headline-text {
+  text-align: center;
+  color: #a4a4a4;
+  padding: 20px;
+}
+
+.heading-dash {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.heading-dash span {
+  position: absolute;
+  width: 30px;
+  margin: 5px;
+  border-bottom: 3px solid #ec5242;
+  bottom: -5px;
+  left: 48%;
+}
+
+.partners {
+  background-color: white;
+  color: #d3d3d3;
+  padding: 20px;
+  
+}
+
+.partner-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner-wrapper img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+
